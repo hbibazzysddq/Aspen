@@ -1,16 +1,13 @@
 # belajar_flutter
 
-A new Flutter project.
+Mempelajari Sekaligus Praktek
 
-## Getting Started
+## About
 
-This project is a starting point for a Flutter application.
+Project ini bertujuan untuk membantu saya mengembangkan diri menggunakan flutter.
 
-A few resources to get you started if this is your first Flutter project:
+Design Figna
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Aspen](https://www.figma.com/design/EeEJwWad5ZZwzuq95vvZUx/Aspen-Travel-App-Exploration--Mobile-App-Design-(Community)?node-id=0-11&node-type=frame&t=cFRMCvXIUOlr8s78-0)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Terima Kasih
