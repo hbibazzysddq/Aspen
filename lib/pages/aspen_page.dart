@@ -1,4 +1,6 @@
+import 'package:belajar_flutter/pages/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AspenPage extends StatelessWidget {
   const AspenPage({super.key});
@@ -43,7 +45,7 @@ class AspenPage extends StatelessWidget {
                 // decoration: BoxDecoration(
                 //   color: Colors.white,
                 // ),
-                margin: const EdgeInsets.only(left: 32, right: 43, bottom: 124),
+                margin: const EdgeInsets.only(left: 32, right: 43, bottom: 72),
                 child: const SafeArea(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,21 +91,29 @@ class AspenPage extends StatelessWidget {
                 height: 52,
                 width: 340,
                 margin: const EdgeInsets.only(
-                  bottom: 32,
+                  bottom: 48,
                 ),
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
+                child: GestureDetector(
+                  onTap: () {
+                    Get.to(
+                      () => const HomePage(),
+                      transition: Transition.rightToLeft,
+                      duration: const Duration(milliseconds: 700),
+                    );
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.blue.shade500,
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    foregroundColor: Colors.white,
-                    backgroundColor: Colors.blue,
-                  ),
-                  onPressed: () {},
-                  child: const Text(
-                    'Explore',
-                    style: TextStyle(
-                      fontSize: 16,
+                    child: const Center(
+                      child: Text(
+                        'Explore',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Colors.white,
+                        ),
+                      ),
                     ),
                   ),
                 ),
