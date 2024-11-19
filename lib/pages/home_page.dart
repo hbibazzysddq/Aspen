@@ -1,3 +1,4 @@
+import 'package:belajar_flutter/components/menu_aspen.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -90,6 +91,10 @@ class HomePage extends StatelessWidget {
                 // Handle text input change here
               },
             ),
+          ),
+          Container(
+            margin: const EdgeInsets.only(top: 32, left: 20),
+            child: const MenuAspen(),
           ),
         ],
       ),
