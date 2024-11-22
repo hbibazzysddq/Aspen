@@ -1,5 +1,7 @@
 import 'package:belajar_flutter/components/menu_aspen.dart';
+import 'package:belajar_flutter/pages/detail_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -200,13 +202,22 @@ class _HomePageState extends State<HomePage> {
                   const SizedBox(width: 16),
                   Stack(
                     children: [
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(20),
-                        child: Image.asset(
-                          'image/populer2.png',
-                          fit: BoxFit.cover,
-                          width: 200,
-                          height: 320,
+                      GestureDetector(
+                        onTap: () {
+                          Get.to(
+                            () => const DetailPage(),
+                            transition: Transition.rightToLeft,
+                            curve: Curves.easeInOut,
+                          );
+                        },
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
+                            'image/populer2.png',
+                            fit: BoxFit.cover,
+                            width: 200,
+                            height: 320,
+                          ),
                         ),
                       ),
                       Align(

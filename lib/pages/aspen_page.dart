@@ -98,7 +98,7 @@ class AspenPage extends StatelessWidget {
                     Get.to(
                       () => const HomePage(),
                       transition: Transition.rightToLeft,
-                      duration: const Duration(milliseconds: 700),
+                      duration: const Duration(seconds: 1),
                     );
                   },
                   child: Container(
